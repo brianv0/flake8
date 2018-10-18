@@ -59,6 +59,8 @@ All options available as of Flake8 3.1.0::
                           (Default: E121,E123,E126,E226,E24,E704,W503,W504)
     --max-line-length=n   Maximum allowed line length for the entirety of this
                           run. (Default: 79)
+    --max-doc-length=n    Maximum allowed doc line length for the entirety of
+                          this run.
     --select=errors       Comma-separated list of errors and warnings to enable.
                           For example, ``--select=E4,E51,W234``. (Default:
                           E,F,W,C90)

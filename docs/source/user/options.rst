@@ -62,6 +62,8 @@ Index of Options
 
 - :option:`flake8 --max-line-length`
 
+- :option:`flake8 --max-doc-length`
+
 - :option:`flake8 --select`
 
 - :option:`flake8 --disable-noqa`
@@ -519,6 +521,36 @@ Options and their Descriptions
     .. code-block:: ini
 
         max-line-length = 79
+
+
+.. option:: --max-doc-length=<n>
+
+    :ref:`Go back to index <top>`
+
+    Set the maximum doc length that any line (with some exceptions) may be.
+
+    Exceptions include lines that are either strings or comments which are
+    entirely URLs. For example:
+
+    .. code-block:: python
+
+        # https://some-super-long-domain-name.com/with/some/very/long/path
+
+    This defaults to off. If you set a number, it will be turned on.
+
+    Command-line example:
+
+    .. prompt:: bash
+
+        flake8 --max-doc-length 72 dir/
+
+    This **can** be specified in config files.
+
+    Example config file usage:
+
+    .. code-block:: ini
+
+        max-doc-length = 72
 
 
 .. option:: --select=<errors>

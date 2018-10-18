@@ -70,6 +70,13 @@ We use a maximum line-length in our documentation that is similar to the
 default in |Flake8|. Please wrap lines at 79 characters (or less).
 
 
+Wrap doc lines around 72 characters
+===================================
+
+We use a maximum doc-length in our documentation that is stricter than the
+default in |Flake8|. Please wrap lines at 72 characters (or less).
+
+
 Use two new-lines before new sections
 =====================================
 
