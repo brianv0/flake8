@@ -22,6 +22,7 @@ def register_default_options(option_manager):
     - ``--extend-ignore``
     - ``--per-file-ignores``
     - ``--max-line-length``
+    - ``--max-doc-length``
     - ``--select``
     - ``--disable-noqa``
     - ``--show-source``
@@ -164,6 +165,12 @@ def register_default_options(option_manager):
         parse_from_config=True,
         help="Maximum allowed line length for the entirety of this run. "
         "(Default: %default)",
+    )
+
+    add_option(
+        '--max-doc-length', type='int', metavar='n',
+        default=None, parse_from_config=True,
+        help='Maximum allowed doc line length for the entirety of this run.'
     )
 
     add_option(

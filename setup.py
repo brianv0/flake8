@@ -92,6 +92,7 @@ setuptools.setup(
             PEP8_PLUGIN('trailing_whitespace'),
             PEP8_PLUGIN('trailing_blank_lines'),
             PEP8_PLUGIN('maximum_line_length'),
+            PEP8_PLUGIN('maximum_doc_length'),
             PEP8_PLUGIN('blank_lines'),
             PEP8_PLUGIN('extraneous_whitespace'),
             PEP8_PLUGIN('whitespace_around_keywords'),
